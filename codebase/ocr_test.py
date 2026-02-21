@@ -43,7 +43,7 @@ df.columns = df.iloc[0]#takes first row of data and use it as col header
 
 df=df[1:]#removes the first row
 
-df = df[df.iloc[:, 0].notna()]#select only where srno is not empty
+#df = df[df.iloc[:, 0].notna()]#select only where srno is not empty
 
 df.dropna(axis=1, how='all', inplace=True)#drop columns which has all vals as none
 
